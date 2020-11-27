@@ -4,8 +4,23 @@
     box-sizing: border-box;
 }
 
+address, area, article, aside, audio, blockquote, datalist, details, dl, fieldset, 
+figure, form, input, iframe, img, meter, nav, ol, optgroup, option, output, p, pre, 
+progress, ruby, section, table, textarea, ul, video {
+    margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5rem;
+    margin-bottom: .8rem;
+}
+
+img {
+    width: 100%;
+}
+
 p {
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 }
 
 a {
@@ -14,6 +29,31 @@ a {
 
 ol, ul {
     padding-left: 2rem;
+}
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background-color: #F0F0F0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+thead th {
+}
+
+th, td {
+    padding: 5px 10px;
+    text-align: left;
 }
 
 hr {
@@ -30,7 +70,7 @@ html {
 }
 
 body {
-    width: 750px;
+    width: 760px;
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -43,6 +83,7 @@ nav.main {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin: 0;
 }
 
 nav.main > a {
@@ -63,8 +104,8 @@ nav.main > a {
     flex-grow: 1;
 }
 
-.content > h1 {
-
+.content > article {
+    padding: 0 10px;
 }
 
 .posts {
@@ -82,6 +123,7 @@ nav.main > a {
 
 h1.title {
     text-align: center;
+    margin-top: .2rem;
     margin-bottom: .2rem;
     font-size: 2rem;
 }
