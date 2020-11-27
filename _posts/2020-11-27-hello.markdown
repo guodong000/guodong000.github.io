@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Hello, world!"
+categories: test
+---
+hello world
+
+中文现实如何？
