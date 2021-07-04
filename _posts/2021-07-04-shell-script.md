@@ -39,7 +39,7 @@ world
 
 # 语法
 
-## <a id="variable"></a> 变量
+## 变量 {#variable}
 
 默认情况下，所有变量都被看作字符串，并以字符串来存储。
 
@@ -67,7 +67,7 @@ echo $userinput
 
 <small>👆 参数变量仅在有相应参数时被创建。即使没有任何参数，环境变量依然存在。</small>
 
-## <a id="controlstruct"></a> 控制结构
+## 控制结构 {#controlstruct}
 
 ### test 命令
 
@@ -287,7 +287,7 @@ else
 fi
 ```
 
-# <a id="command"></a> 命令
+# 命令 {#command}
 
 Shell 脚本内使用的命令分为两种
 
@@ -413,7 +413,7 @@ echo "File no longer exists"
 
 ```
 
-## <a id="expr"></a> expr 命令
+## expr 命令 {#expr}
 
 将其参数当作一个表达式来求值。最常见的用法就是进行简单数学运算。
 
@@ -451,7 +451,7 @@ while [ "$x" -ne 10 ]; do
 done
 ```
 
-## <a id="paramexpand"></a> 参数扩展
+## 参数扩展 {#paramexpand}
 
 ```bash
 for i in 1 2; do
