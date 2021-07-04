@@ -18,7 +18,7 @@ email: guodong000@gmail.com
 description:
   Where I write about technical and other awesome things.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://guodong.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: guodong000
 github_username:  guodong000
 
