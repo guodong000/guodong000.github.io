@@ -50,12 +50,13 @@ defaults:
   -
     scope:
       path: ""
-      type: pages
+      type: "pages"
     values:
       layout: "page"
   -
     scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
       layout: "post"
+      comments: true

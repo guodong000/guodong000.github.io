@@ -70,43 +70,61 @@ th, td {
 
 hr {
     border: 0;
-    border-bottom: 1px solid #d1c8ca;
+    border-bottom: 1px dotted #d0d0d0;
     margin: 1rem auto;
     width: 100%;
 }
 
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
 html {
     font: 14px/1.5 "PingFang SC","Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-    background-color: #4A4A4A;
+    /* background-color: #4A4A4A; */
+    background-color: #FFFFFF;
     color: #4A4A4A;
 }
 
 body {
-    width: 760px;
+    /* width: 760px; */
     min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 nav.main {
-    height: 2.8rem;
+    width: 760px;
+    height: 3.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    justify-content: center;
     margin: 0;
+    font-size: 1rem;
 }
 
 nav.main > a {
     margin: 0 .4rem;
     text-decoration: underline;
-    color: #FFFFFF;
+    color: #4A4A4A;
+}
+
+.comments {
+    padding-top: 30px;
 }
 
 .container {
+    width: 760px;
     padding: 20px;
-    background-color: #E6E6E6;
+    /* background-color: #E6E6E6; */
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -161,7 +179,7 @@ h1.title {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
+    .container, nav.main {
         width: 100%;
     }
 }
