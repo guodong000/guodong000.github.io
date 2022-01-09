@@ -25,6 +25,9 @@ github_username:  guodong000
 # Build settings
 timezone: Asia/Shanghai
 markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
 theme: minima
 plugins:
   - jekyll-feed

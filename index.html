@@ -2,31 +2,21 @@
 layout: default
 title: Home
 ---
-<br><br>
 <div class="center">
-<pre style="font-size: 12px; font-weight: bold;">
- _   _  _____ _      _     _____ 
-| | | ||  ___| |    | |   |  _  |
-| |_| || |__ | |    | |   | | | |
-|  _  ||  __|| |    | |   | | | |
-| | | || |___| |____| |___\ \_/ /
-\_| |_/\____/\_____/\_____/\___/ 
-</pre>
+<h1>Google-Oriented Programming</h1>
 <br><br>
-<p style="font-size: 1.5rem;"><i class="fas fa-book-open"></i></p>
-<p id="randSent" style="padding-left: 40px; padding-right: 40px;">......</p>
+<p style="font-size: 1.5rem;"><i class="fas fa-laptop-code"></i></p>
+<p>
+    The First Rule of Program Optimization: <br>
+    <b>Don't do it!</b><br>
+    The Second Rule of Program Optimization (For experts only): <br>
+    <b>Don't do it yet!</b>
+</p>
+<p>—— Michael A. Jackson</p>
+<br>
+<p><a href="http://www.wtfpl.net/"><abbr title="Do What the Fuck You Want to Public License">WTFPL</abbr></a> is the best <b>Public License</b> in the world!</p>
+<p>—— By Myself</p>
 </div>
 <script>
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                document.getElementById('randSent').textContent = xhr.responseText;
-            } else {
-                document.getElementById('randSent').textContent = 'Opps, Something wrong.';
-            }
-        }
-    };
-    xhr.open('GET', 'https://api.fczbl.vip/hitokoto/?charset=utf-8');
-    xhr.send();
+    
 </script>
