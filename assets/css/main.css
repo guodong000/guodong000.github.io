@@ -43,6 +43,10 @@ ol, ul {
     padding-left: 2rem;
 }
 
+li {
+    line-height: 1.8rem;
+}
+
 table {
     max-width: 100%;
     border-collapse: collapse;
