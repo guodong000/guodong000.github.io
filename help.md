@@ -21,3 +21,6 @@ bundle exec jekyll serve --drafts
 `print("hello")`{: .python}
 ```
 `print("hello")`{: .python}
+
+使用 `<br>` 或者 `两个空格` 即可换行。
+
