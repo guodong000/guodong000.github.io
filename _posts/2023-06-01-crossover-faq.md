@@ -38,8 +38,9 @@ FontSmoothingOrientation=0x00000001 (dword key)
 ![CrossOver Shortcuts](/assets/images/2023-06-01-crossover-faq/crossover_panel_shortcuts.png)
 
 直接修改 `[Bottle_Folder]/desktopdata/cxmenu/cxmenu_macosx.plist` 可立即生效。但修改 Bottle 名称后，`cxmenu_macosx.plish` 会被重新生成，需要进行一系列修改：
-* 删除 Windows 中的快捷方式：
+* 删除 Windows 中的快捷方式（常见位置）：
     * `driver_c/users/crossover/AppData/Roaming/Microsoft/Windows/Start Menu/`
     * `driver_c/users/crossover/Desktop/`
-* 修改 `[Bottle_Folder]/cxmenu.conf`
-* 修改 `[Bottle_Folder]/desktopdata/cxmenu/cxmenu_macosx.plist`
+    * `driver_c/ProgramData/Microsoft/Windows/Start Menu/`
+* 修改 `[Bottle_Folder]/cxmenu.conf`。
+* 通过在 CrossOver 中修改容器名称进行刷新，`cxmenu_macosx.plish` 会自动更新无需手动修改。
