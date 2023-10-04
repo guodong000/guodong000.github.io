@@ -7,7 +7,7 @@ title: CrossOver 疑难杂症
 
 ![winecfg 字体发虚](/assets/images/2023-06-01-crossover-faq/winecfg_font_gray.png)
 
-修改注册表项 `HKEY_CURRENT_USER/Control Panel/Desktop`，修改完后正常安装其他中文字体即可。
+修改注册表项 `[HKEY_CURRENT_USER/Control Panel/Desktop]`，修改完后正常安装其他中文字体即可。
 
 ```
 FontSmoothing=2 (string key)
@@ -32,6 +32,14 @@ FontSmoothingOrientation=0x00000001 (dword key)
 参考：
 - [Enabling subpixel rendering/anti-aliasing in CrossOver.](https://www.codeweavers.com/support/wiki/linux/faq/cxofficeantialias)
 - [StackExchange Answer](https://superuser.com/a/945614)
+
+## 修改中文字体
+
+1. 将中文字体放到 `C:\\windows\Fonts\` 目录下。
+2. 修改注册表项 `[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]` - `Tahoma`，将上述中文字体的文件名添加到数据首行。
+
+**原理**：`Tahoma` 为 Windows 的默认字体，由于其为英文字体，系统在显示字体不支持的字符时会从字体的 Fallback 列表中查找适配字体，默认 `Tahoma` 的首个 Fallback 为 `SimSun.TFF`（宋体），所以通过修改 `Tahoma` 的 Fallback 即可设置中文字体。同样直接将 `SimSun.tff` 直接放到 `C:\\windows\Fonts\` 目录下也可以将中文字体设置为宋体。
+
 
 ## 删除快捷方式
 
