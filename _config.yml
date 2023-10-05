@@ -29,7 +29,7 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
-theme: no-style-please
+# theme: no-style-please
 remote_theme: no-style-please
 theme_config:
   appearance: "auto" # can be "light", "dark" or "auto"
