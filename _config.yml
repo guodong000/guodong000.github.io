@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Hello world
+title: Google-Oriented Programmer
 email: guodong000@gmail.com
 description:
   Where I write about technical and other awesome things.
@@ -28,7 +28,14 @@ markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable: true
-theme: minima
+
+theme: no-style-please
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: "< Back" # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description in home page
+
 plugins:
   - jekyll-feed
 
@@ -43,23 +50,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true

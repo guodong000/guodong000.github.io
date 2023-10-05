@@ -1,0 +1,27 @@
+---
+---
+
+@import "no-style-please";
+
+.w {
+    max-width: 1024px;
+}
+
+code {
+    padding: 0 4px;
+    background: #23262b;
+}
+
+code.hljs {
+    position: relative;
+
+    label {
+        position: absolute;
+        color: white;
+        right: 0; top: 0;
+        font-size: 11px;
+        display: block;
+        padding: 4px 12px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
