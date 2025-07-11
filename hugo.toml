@@ -1,7 +1,45 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+title = "Guo Dong"
 theme = 'PaperMod'
+timeZone = 'Asia/Shanghai'
+
 [caches]
-    [caches.images]
-        dir = ':cacheDir/images'
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  env = 'production'
+  author = 'Guo Dong'
+  mainSections = ['posts']
+  dateFormat = '2006-01-02'
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  [params.homeInfoParams]
+    title = "Welcome to my blog"
+    content = 'Curious, Developer, from China 🇨🇳.'
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/guodong000'
+  [[params.socialIcons]]
+    name = 'x'
+    url = 'https://x.com/guodong000'
+
+[menus]
+  [[menus.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 11
