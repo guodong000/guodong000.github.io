@@ -5,6 +5,9 @@ title = "Guo Dong"
 theme = 'PaperMod'
 timeZone = 'Asia/Shanghai'
 
+[pagination]
+  pagerSize = 10
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
