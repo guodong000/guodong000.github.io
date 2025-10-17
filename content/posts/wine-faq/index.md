@@ -51,4 +51,7 @@ FontSmoothingOrientation=0x00000001 (dword key)
 
 `~/Library/Application Support/CrossOver/Bottles/<Bottle Name>/cxmenu.conf` 中记录了所有快捷方式，其中包含每个快捷方式所在位置。
 
-通常情况下快捷方式保存在 `c:\\users\crossover\AppData\Roaming\Microsoft\Windows\Start Menu\` 中，删除相应 `.lnk` 文件，然后重建程序菜单即可。
+通常情况下快捷方式保存在以下位置，删除相应 `.lnk` 文件，然后重建程序菜单即可。
+
+* `c:\\users\crossover\AppData\Roaming\Microsoft\Windows\Start Menu\`
+* `c:\\ProgramData\Microsoft\Windows\Start Menu\`
